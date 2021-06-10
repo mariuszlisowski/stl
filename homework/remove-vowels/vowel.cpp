@@ -3,7 +3,7 @@
 #include <algorithm>
 
 void removeVowels(std::vector<std::string>& vec) {
-    std::string vowels{"aeiouyAEIOUY"};
+    const std::string vowels{"aeiouyAEIOUY"};
     for (auto& str : vec) {
         str.erase(std::remove_if(str.begin(),
                                  str.end(),
